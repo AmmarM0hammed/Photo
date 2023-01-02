@@ -1,0 +1,92 @@
+.link-auth{
+    color: var(--red);
+    font-size: 14px;
+    float: right;
+    padding-right: 10px;
+  }
+  .link-auth:hover{
+    color: var(--red);
+    opacity: .7;
+  }
+
+
+ /* Auth */
+
+ .auth{
+    margin: auto;
+    
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: nowrap;
+    max-width: 760px;
+    
+  }
+
+  .auth .left{
+    background-color: var(--red);
+    border-radius: 24px;
+    width: 22rem;
+    padding: 60px 50px;
+    color: white;
+  }
+  @media only screen and (max-width: 650px) {
+    .auth .left{
+      display: none;
+    }
+    .auth .right{
+      width: 100% !important;
+      /* background-color: red; */
+    }
+    .auth{
+      display: flex;
+      justify-content: center;
+    }
+  
+}
+  .left ul{
+    margin-top: 50px;
+    margin-left: -30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: end;
+    gap: 50px;
+  }
+  .left ul li{
+    font-size: 18px;
+  }
+  .left ul li i {
+    font-size: 25px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  .left ul li span{
+    position: relative;
+    top:-5px;
+  }
+  .auth .right{
+    width: 25rem;
+    text-align: center;
+    position: relative;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: center;
+    gap: 70px;
+  }
+  .auth .right .header{
+    position: relative;
+    top: 25px;
+  }
+  .auth .right .header span{
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
